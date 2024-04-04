@@ -35,10 +35,10 @@ Llamadas a la API para el formulario de registro de clientes y vehículo vincula
 
 Login de usuarios
 ----------------------------------
-Cuando un usuario inicia sesión en la aplicación, la API verifica las credenciales proporcionadas (correo electrónico y contraseña) y autentica los datos. Si las credenciales son válidas, se genera un token de acceso que se utiliza para las futuras interacciones con la aplicación (firebase)Además de todo ello, se dan los datos necesarios para saber si el usuario que está entrando lo está haciendo en modo cliente o empleado. Según esta opción, las interfaces y funcionalidades de la aplicación serán distintas.
+Cuando un usuario inicia sesión en la aplicación, la API verifica las credenciales proporcionadas (correo electrónico y contraseña) y autentica los datos. Si las credenciales son válidas, se genera un token de acceso que se utiliza para las futuras interacciones con la aplicación (firebase)Además de todo ello, se dan los datos necesarios para saber si el usuario que está entrando lo está haciendo en modo cliente, empleado o administrador. Según esta opción, las interfaces y funcionalidades de la aplicación serán distintas.
 
 ###  Login cliente / empleado
-Solicita acceso a la app con su email y password. Desde esta opción se dará acceso al usuario en modo cliente o empleado. Los valores devueltos son:
+Solicita acceso a la app con su email y password. Desde esta opción se dará acceso al usuario en modo cliente, empleado o administrador. Los valores devueltos son:
 1. Es cliente --> 1
 2. Es empleado --> 0
 3. Es administrador --> 3
