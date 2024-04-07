@@ -13,10 +13,10 @@ header('Content-Type: application/json; charset=utf-8');
 
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
-/*
- * Listado de generaciones por id_modelo y año entre begin y end
- * llamada: http://localhost/app/vehiculos/generacionByModeloYear.php?id_modelo=7&anio=2001
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/vehiculos/generacionByModeloYear.php?id_modelo=7&anio=2001
+/**
+ * Method: GET
+ * Param: id_modelo
+ * Listado de generaciones por id_modelo
 */
 
 if(isset($_GET['id'])){

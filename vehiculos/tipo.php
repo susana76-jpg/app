@@ -13,10 +13,8 @@ header('Content-Type: application/json; charset=utf-8');
 
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
-/*
- * Listado de todos los tipos de vehiculos
- * llamada: http://localhost/app/vehiculos/tipo.php
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/vehiculos/tipo.php
+/**
+* Listado de todos los tipos de vehiculos
 */
 
 $sql = "SELECT * from vehiculo_tipo order by tipo asc";

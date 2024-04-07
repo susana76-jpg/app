@@ -12,10 +12,11 @@ if($method == "OPTIONS") {
 header('Content-Type: application/json; charset=utf-8');
 
 include_once("../connect.php");
-/*
- * Listado de series por id_generación
- * llamada: http://localhost/app/vehiculos/motorBySerieModelo.php?id_serie=457&id_modelo=350
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/vehiculos/motorBySerieModelo.php?id_serie=457&id_modelo=350
+mysqli_set_charset($mysqli,"utf8");
+/** 
+ * Method: GET
+ * Params: id_serie, id_modelo
+ * Listado de vehiculo_trim por serie y modelo
 */
 
 if(isset($_GET['id_serie']) and isset($_GET['id_modelo'])){

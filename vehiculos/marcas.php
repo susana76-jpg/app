@@ -12,11 +12,10 @@ if($method == "OPTIONS") {
 header('Content-Type: application/json; charset=utf-8');
 
 include_once("../connect.php");
-/*
- * Listado de todas las marcas
- * llamada:  http://localhost/app/vehiculos/marcas.php
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/vehiculos/marcas.php
-*/
+mysqli_set_charset($mysqli,"utf8");
+/**
+ * Listado de todas las marcas de cohes.
+ */
 $sql = "SELECT DISTINCT * from vehiculo_marca order by marca asc";
 $result = $mysqli->query($sql);
 
