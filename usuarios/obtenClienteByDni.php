@@ -16,11 +16,10 @@ if($method == "OPTIONS") {
 }
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
-/*
- * Login del cliente / empleado
- * el id_cliente == id_empleado (si el usuario logado es un empleado)
- * llamada: http://localhost/app/clientes/loginCliente.php
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/clientes/loginCliente.php
+/**
+ * Method: GET
+ * Param: dni
+ * Devuelve los datos del cliente por dni_cif.
 */
 
     if( isset($_GET['valor'])){

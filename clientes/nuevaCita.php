@@ -11,11 +11,10 @@ if($method == "OPTIONS") {
 }
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
-/*
- * Insert en la tabla citas GET
- * llamada: http://localhost/app/clientes/nuevaCita.php
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/clientes/nuevaCita.php
- * 
+/**
+ * Method: POST
+ * Param: id_vehiculo_cliente,id_usuario,id_empleado_asignado,hora,fecha,fecha_larga,fecha_larga2,observaciones,motivo
+ * Inserta nueva cita.
 */
 
     if( isset($_POST['id_vehiculo_cliente']) and isset($_POST['id_usuario']) and isset($_POST['id_empleado_asignado']) and isset($_POST['hora']) 

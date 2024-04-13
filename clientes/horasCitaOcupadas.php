@@ -12,11 +12,10 @@ if($method == "OPTIONS") {
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
 
-/*
-* Listado de horas ya ocupadas por fecha
-* https://www.focused-kepler.85-214-239-118.plesk.page/app/clientes/horasCitaOcupadas.php?fecha=2024-03-26
-* http://localhost/app/clientes/horasCitaOcupadas.php?fecha=2024-03-28
-* 
+/**
+ * Method: GET
+ * Param: fecha
+ * Listado de horas en citas ocupadas por fecha .
 */
 
 if(isset($_GET['fecha'])){

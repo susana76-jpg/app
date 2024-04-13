@@ -13,9 +13,10 @@ header('Content-Type: application/json; charset=utf-8');
 
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
-/*
-Lineas de presupuesto por su id
-llamada: http://localhost/app/clientes/lineasPresupuestoByIdPresupuesto.php?id_presupuesto=1
+/**
+ * Method: GET
+ * Param: id_presupuesto
+ * Listado de líneas de presupuesto por id presupuesto .
 */
 
 if(isset($_GET['id_presupuesto']) and is_numeric($_GET['id_presupuesto'])){

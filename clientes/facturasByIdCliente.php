@@ -13,10 +13,10 @@ header('Content-Type: application/json; charset=utf-8');
 
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
-/*
-Datos de las facturas por id de cliente
-llamada: http://localhost/app/clientes/facturasByIdCliente.php?cliente=1
-https://www.focused-kepler.85-214-239-118.plesk.page/app/clientes/facturasByIdCliente.php?cliente=1
+/**
+ * Method: GET
+ * Param: cliente
+ * Listado de facturas con presupuesto aceptado y orden de fabricación finalizada, por id usuario .
 */
 
 if(isset($_GET['cliente']) and is_numeric($_GET['cliente'])){

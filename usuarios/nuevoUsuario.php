@@ -11,10 +11,10 @@ if($method == "OPTIONS") {
 }
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
-/*
- * Insert en la tabla de clientes por el método POST
- * llamada: http://localhost/app/usuarios/nuevoUsuario.php
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/usuarios/nuevoUsuario.php
+/**
+ * Method: POST
+ * Param: nombre,dni_cif,direccion,localidad,codPostal,provincia,telefono,email,password,firebase
+ * Inserta nuevo usuario.
 */
 
     if( isset($_POST['nombre']) and isset($_POST['dni_cif']) 

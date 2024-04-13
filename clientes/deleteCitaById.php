@@ -12,11 +12,11 @@ if($method == "OPTIONS") {
 header('Content-Type: application/json; charset=utf-8');
 
 include_once("../connect.php");
-/*
-* Elimina una cita por su id_cita
-* https://www.focused-kepler.85-214-239-118.plesk.page/app/clientes/deleteCitaById.php?id_cita=6
-* http://localhost/app/clientes/deleteCitaById.php?id_cita=7
-* 
+mysqli_set_charset($mysqli,"utf8");
+/**
+ * Method: GET
+ * Param: id_cita
+ * Elimina cita por id.
 */
 
 if(isset($_GET['id_cita'])){

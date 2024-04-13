@@ -11,10 +11,10 @@ if($method == "OPTIONS") {
 }
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
-/*
- * Actualiza el password cuando el usuario se loga en firebase
- * llamada: http://localhost/app/usuarios/nuevoUsuario.php
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/usuarios/nuevoUsuario.php
+/**
+ * Method: POST
+ * Param: email,password
+ * Actualiza el email y password del usuario.
 */
 
     if(isset($_POST['email']) && isset($_POST['password'])){

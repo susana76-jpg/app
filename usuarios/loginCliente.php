@@ -11,18 +11,17 @@ if($method == "OPTIONS") {
 }
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
-/*
- * Login del cliente / empleado
- * el id_cliente == id_empleado (si el usuario logado es un empleado)
- * llamada: http://localhost/app/clientes/loginCliente.php
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/clientes/loginCliente.php
+/**
+ * Method: POST
+ * Param: email,password
+ * Devuelve usuario por su email y password.
 */
 
     if( isset($_POST['email']) and isset($_POST['password'])){
         
         $email = $mysqli->real_escape_string($_POST['email']);
         $password = $mysqli->real_escape_string($_POST['password']);
-        //$password = base64_decode($password);
+    
     
         if ($resultado = $mysqli->prepare("SELECT * FROM clientes WHERE email = ? and password= ?")) {
                   

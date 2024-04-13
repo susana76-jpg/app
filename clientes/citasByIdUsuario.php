@@ -12,11 +12,10 @@ if($method == "OPTIONS") {
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
 
-/*
-* Listado de horas ya ocupadas por fecha
-* https://www.focused-kepler.85-214-239-118.plesk.page/app/clientes/citasByIdUsuario.php?idUsuario=1
-* http://localhost/app/clientes/citasByIdUsuario.php?idUsuario=1
-* 
+/**
+ * Method: GET
+ * Param: idUsuario
+ * Listado de citas por id de usuario.
 */
 
 if(isset($_GET['idUsuario'])){

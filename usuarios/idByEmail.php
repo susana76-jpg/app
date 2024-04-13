@@ -11,11 +11,12 @@ if($method == "OPTIONS") {
 }
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
-/*
- * Selecciona el id de cliente por email
- * llamada: http://localhost/app/usuarios/idByEmail.php?email=susanaricovara@gmail.com
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/usuarios/idByEmail.php?email=susanaricovara@hotmail.com
+/**
+ * Method: GET
+ * Param: email
+ * Devuelve el id de usuario por email.
 */
+
 if(isset($_GET['email'])){
 	$email=$_GET['email'];
     if($query = $mysqli->prepare("SELECT id_usuario from usuarios where email = ?")){

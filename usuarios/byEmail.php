@@ -13,10 +13,10 @@ header('Content-Type: application/json; charset=utf-8');
 
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
-/*
- * Selecciona cliente por email
- * llamada: http://localhost/app/usuarios/byEmail.php?email=susanaricovara@gmail.com
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/usuarios/byEmail.php?email=susanaricovara@gmail.com
+/**
+ * Method: GET
+ * Param: email
+ * Usuario por email.
 */
 
 if(isset($_GET['email'])){

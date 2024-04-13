@@ -11,10 +11,10 @@ if($method == "OPTIONS") {
 }
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
-/*
- * Busca si es cliente o empleado
- * llamada: http://localhost/app/usuarios/esCliente.php?email=susanaricovara@hotmail.com&password=susana
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/usuarios/esCliente.php?email=susanaricovara@hotmail.com&password=susana
+/**
+ * Method: POST
+ * Param: email, password
+ * Devuelve el rol del usuario (0,1,2 --> cliente, empleado o admin).
 */
 
     if( isset($_POST['email']) and isset($_POST['password'])){

@@ -14,11 +14,11 @@ if($method == "OPTIONS") {
     die();
 }
 include_once("../connect.php");
-/*
- * Login del cliente / empleado
- * el id_cliente == id_empleado (si el usuario logado es un empleado)
- * llamada: http://localhost/app/clientes/loginCliente.php
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/clientes/loginCliente.php
+mysqli_set_charset($mysqli,"utf8");
+/**
+ * Method: POST
+ * Param: matricula
+ * Devuelve el usuario pro matrícula.
 */
 
     if( isset($_POST['matricula'])){
