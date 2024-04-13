@@ -10,6 +10,7 @@ if($method == "OPTIONS") {
     die();
 }
 include_once("../connect.php");
+mysqli_set_charset($mysqli,"utf8");
 /*
  * Busca si es cliente o empleado
  * llamada: http://localhost/app/usuarios/esCliente.php?email=susanaricovara@hotmail.com&password=susana

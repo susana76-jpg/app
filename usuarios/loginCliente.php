@@ -10,6 +10,7 @@ if($method == "OPTIONS") {
     die();
 }
 include_once("../connect.php");
+mysqli_set_charset($mysqli,"utf8");
 /*
  * Login del cliente / empleado
  * el id_cliente == id_empleado (si el usuario logado es un empleado)

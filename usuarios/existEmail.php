@@ -12,6 +12,7 @@ if($method == "OPTIONS") {
 header('Content-Type: application/json; charset=utf-8');
 
 include_once("../connect.php");
+mysqli_set_charset($mysqli,"utf8");
 /** 
  * Comprueba si existe el email enviado por método POST
  * Llamada: http://localhost/app/usuarios/existEmail.php
