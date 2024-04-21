@@ -12,10 +12,11 @@ if($method == "OPTIONS") {
 header('Content-Type: application/json; charset=utf-8');
 
 include_once("../connect.php");
-/*
- * Listado de vehiculos-cliente por matrícula
- * llamada: http://localhost/app/veh_cli/byMatricula.php?matricula=45689M
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/veh_cli/byMatricula.php?matricula=45689M
+mysqli_set_charset($mysqli,"utf8");
+/**
+ * Method: GET
+ * Param: matricula
+ * Listado de vehiculos por matrícula like
 */
 
 if(isset($_GET['matricula'])){

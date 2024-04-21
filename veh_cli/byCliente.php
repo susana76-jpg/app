@@ -12,10 +12,11 @@ if($method == "OPTIONS") {
 header('Content-Type: application/json; charset=utf-8');
 
 include_once("../connect.php");
-/*
- * Listado de vehiculos-cliente por id_cliente
- * llamada: http://localhost/app/veh_cli/byCliente.php?id_cliente=1
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/veh_cli/byCliente.php?id_cliente=1
+mysqli_set_charset($mysqli,"utf8");
+/**
+ * Method: GET
+ * Param: id_cliente
+ * Listado de vehiculos por id de cliente
 */
 
 

@@ -11,10 +11,10 @@ if($method == "OPTIONS") {
 }
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
-/*
- * Insert en la tabla de vehiculos-clientes por el método POST
- * llamada: http://localhost/app/veh-cli/nuevoVehiculoCliente.php
- * servidor: https://www.focused-kepler.85-214-239-118.plesk.page/app/veh-cli/nuevoVehiculoCliente.php
+/**
+ * Method: POST
+ * Param: id_usuario, id_vehiculo_trim, matricula, kilometraje, combustible, cambio, anio
+ * Añade un vehíuclo.
 */
 
     if( isset($_POST['id_usuario']) and isset($_POST['id_vehiculo_trim']) and 
