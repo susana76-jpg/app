@@ -49,6 +49,28 @@ Solicita acceso a la app con su email y password. Desde esta opción se dará ac
 
 Usabilidad en la parte cliente
 ----------------------------------
+###  Citas
+1. Selecciona horas disponibles por fechas.
+2. Graba citas solicitadas desde la aplicación.
+3. Borra citas que el cliente aún no ha realizado
+4. Histórico de citas realizadas
+
+###  Averías
+Desde el histórico de citas, histórico de averías 
+
+###  Vehículos
+Se lista los vehículos de los que el cliente ha tenido citas
+
+###  Presupuestos
+1. Listado de presupuestos enviados al cliente, tanto aceptados como no.
+2. Listado de líneas de presupuesto de cada uno de los presupuestos para su posterior impresión.
+
+###  Facturas
+1. Listado de facturas enviados al cliente, con presupuesto aceptado y orden finalizada.
+2. Listado de líneas de factura de cada uno de las facturas para su posterior impresión.
+
+###  Perfil usuario
+Se permite al usuario editar sus datos de perfíl.
 
 
 
