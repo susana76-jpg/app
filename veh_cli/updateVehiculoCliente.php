@@ -28,7 +28,7 @@ mysqli_set_charset($mysqli,"utf8");
             $resultado->bind_param("ii", $idVehiculoTrim, $kilometraje);
             
             if($resultado->execute()){
-                echo "Se ha realizado la actualización del vehiculo_cliente correctamente.";
+                echo "Se ha realizado la actualización del vehiculo_cliente correctamente";
             }else{
                 echo "No se ha realizado el alta de vehiculo_cliente.";
             }  
