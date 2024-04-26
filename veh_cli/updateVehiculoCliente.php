@@ -13,8 +13,8 @@ include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
 /**
  * Method: POST
- * Param: id_usuario, id_vehiculo_trim, matricula, kilometraje, combustible, cambio, anio
- * Añade un vehíuclo.
+ * Param: id_vehiculo_trim, kilomtraje
+ * Actualiza un vehíuclo.
 */
 
     if( isset($_POST['id_vehiculo_trim']) and  isset($_POST['kilometraje'])){
@@ -30,7 +30,7 @@ mysqli_set_charset($mysqli,"utf8");
             if($resultado->execute()){
                 echo "Se ha realizado la actualización del vehiculo_cliente correctamente";
             }else{
-                echo "No se ha realizado el alta de vehiculo_cliente.";
+                echo "No se ha realizado actualización de vehiculo_cliente.";
             }  
         } else{
             echo 'No se están enviando correctamente los datos';
