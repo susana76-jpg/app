@@ -72,6 +72,24 @@ Se lista los vehículos de los que el cliente ha tenido citas
 ###  Perfil usuario
 Se permite al usuario editar sus datos de perfíl.
 
+
+###  Averías
+Desde el histórico de citas, histórico de averías 
+
+###  Vehículos
+Se lista los vehículos de los que el cliente ha tenido citas
+
+###  Presupuestos
+1. Listado de presupuestos enviados al cliente, tanto aceptados como no.
+2. Listado de líneas de presupuesto de cada uno de los presupuestos para su posterior impresión.
+
+###  Facturas
+1. Listado de facturas enviados al cliente, con presupuesto aceptado y orden finalizada.
+2. Listado de líneas de factura de cada uno de las facturas para su posterior impresión.
+
+###  Perfil usuario
+Se permite al usuario editar sus datos de perfíl.
+
 Usabilidad en la parte empleado
 ----------------------------------
 
