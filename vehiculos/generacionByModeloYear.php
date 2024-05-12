@@ -15,7 +15,7 @@ include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
 /**
  * Method: GET
- * Param: id_modelo
+ * Param: id
  * Listado de generaciones por id_modelo
 */
 

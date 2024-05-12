@@ -22,7 +22,7 @@ mysqli_set_charset($mysqli,"utf8");
 if(isset($_GET['id_usuario'])){
         
     $idUsuario = (int) $_GET['id_usuario'];
-    if($query = $mysqli->prepare("SELECT vh.*, ma.marca, mo.modelo, ser.serie, tr.version, ti.tipo FROM vehiculos_clientes vh
+    if($query = $mysqli->prepare("SELECT DISTINCT vh.*, ma.marca, mo.modelo, ser.serie, tr.version, ti.tipo FROM vehiculos_clientes vh
                                     JOIN vehiculo_trim tr ON tr.id_vehiculo_trim = vh.id_vehiculo_trim 
                                     JOIN vehiculo_serie ser ON ser.id_serie = tr.id_serie
                                     JOIN vehiculo_modelo mo ON mo.id_modelo = tr.id_modelo
