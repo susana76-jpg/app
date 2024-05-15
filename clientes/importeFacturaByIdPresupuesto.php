@@ -23,7 +23,7 @@ if(isset($_GET['id_presupuesto']) and is_numeric($_GET['id_presupuesto'])){
 
     $idPresupuesto = ((int)$_GET['id_presupuesto']);
     
-    $sql = "SELECT sum(importe) FROM lineas_presupuesto WHERE id_presupuesto = ?";
+    $sql = "SELECT sum(importe) as importe FROM lineas_presupuesto WHERE id_presupuesto = ?";
 
     if($query = $mysqli->prepare($sql)){
 
@@ -34,11 +34,11 @@ if(isset($_GET['id_presupuesto']) and is_numeric($_GET['id_presupuesto'])){
 
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()){
-                $RESULT[]= $row;
+                $RESULT= $row;
             }
             echo json_encode($RESULT);
         }else{
-            $RESULT=[];
+            $RESULT=0;
             echo json_encode($RESULT);
         }
     } else {
@@ -48,4 +48,3 @@ $mysqli->close();
 
 }
 ?>
-
