@@ -23,7 +23,7 @@ if(isset($_GET['idUsuario'])){
     $idUsuario = (int)($_GET['idUsuario']);
 
     if($query = $mysqli->prepare("SELECT distinct c.*, vc.id_vehiculo_cliente, vc.matricula, vc.kilometraje, vt.id_vehiculo_trim, 
-                                    vmo.modelo, vm.marca, pr.num_presupuesto, f.num_factura, pr.aceptado as presupuesto_aceptado , o.finalizado as orden_finalizada  
+                                    vmo.modelo, vm.marca, pr.id_presupuesto_cliente, pr.num_presupuesto, f.num_factura, pr.aceptado as presupuesto_aceptado , o.finalizado as orden_finalizada  
                                     FROM citas_asignadas c
                                     JOIN vehiculos_clientes vc ON vc.id_vehiculo_cliente = c.id_vehiculo_cliente
                                     JOIN vehiculo_trim vt ON vt.id_vehiculo_trim = vc.id_vehiculo_trim
