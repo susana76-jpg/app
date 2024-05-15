@@ -16,7 +16,7 @@ mysqli_set_charset($mysqli,"utf8");
 /**
  * Method: GET
  * Param: id_presupuesto
- * Listado de líneas de presupuesto por id presupuesto .
+ * Suma del importe de las líneas del presupuesto / factura.
 */
 
 if(isset($_GET['id_presupuesto']) and is_numeric($_GET['id_presupuesto'])){
