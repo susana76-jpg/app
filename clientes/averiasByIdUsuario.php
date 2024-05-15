@@ -23,8 +23,7 @@ if(isset($_GET['idUsuario'])){
     $idUsuario = (int)($_GET['idUsuario']);
 
     if($query = $mysqli->prepare("SELECT distinct c.*, vc.id_vehiculo_cliente, vc.matricula, vc.kilometraje, vt.id_vehiculo_trim, 
-                                    vmo.modelo, vm.marca
-                                    ,  pr.num_presupuesto, pr.aceptado , o.finalizado  
+                                    vmo.modelo, vm.marca, pr.num_presupuesto, f.num_factura, pr.aceptado as presupuesto_aceptado , o.finalizado as orden_finalizada  
                                     FROM citas_asignadas c
                                     JOIN vehiculos_clientes vc ON vc.id_vehiculo_cliente = c.id_vehiculo_cliente
                                     JOIN vehiculo_trim vt ON vt.id_vehiculo_trim = vc.id_vehiculo_trim
@@ -32,7 +31,7 @@ if(isset($_GET['idUsuario'])){
                                     JOIN vehiculo_marca vm ON vm.id_marca = vmo.id_marca
                                     JOIN presupuestos_clientes pr ON c.id_cita = pr.id_cita 
                                     JOIN ordenes_reparaciones o ON pr.id_presupuesto_cliente = o.id_presupuesto
-                                    JOIN facturas_clientes f ON o.id_orden_reparacion = f.id_orden_reparacion    
+                                    JOIN facturas_clientes f ON o.id_orden_reparacion = f.id_orden_reparacion
                                     WHERE c.id_usuario = ? order by c.fecha desc, c.hora desc;")){
 
         $query->bind_param("i", $idUsuario );
