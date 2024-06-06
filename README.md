@@ -93,9 +93,51 @@ Se permite al usuario editar sus datos de perfíl.
 Usabilidad en la parte empleado
 ----------------------------------
 
+###  Perfil 
+Se permite al usuario mostrar y modificar sus datos.
+
+###  Presupuestos - Documentos
+1. Permite la búsqueda de presupuestos creados anteriormente y mostrarse en
+pantalla.
+2. Permite la creación de presupuestos, mostrándose éstos en pantalla a tiempo
+real.
+
+###  Órdenes de Reparación
+1. Permite la búsqueda de ordenes de reparación creadas anteriormente y
+mostrarse en pantalla.
+2. Permite la creación de ordenes de reparación, y modificar presupuestos
+mostrándose en pantalla los item modificados y los aceptados.
+3. Permite la finalización de orden de reparación y notificación al cliente que la
+reparación ha finalizado y puede retirar el vehículo.
+4. Permite la facturación de la orden finalizada
+
+###  Facturas - Documentos
+1. Permite la búsqueda de facturas creadas anteriormente y mostrarse en pantalla.
+2. Permite la visualización de la factura creada en el acto.
+
+
 
 Usabilidad en la parte administrador
 ----------------------------------
+
+###  Gestión de Empleados
+1. Permite dar de alta en la base de datos un nuevo empleado desde la app.
+2. Permite la búsqueda de las citas, presupuestos y ordenes realizadas por cada
+empleado a nivel de valorar su productividad.
+
+###  Informes - Listados
+1. Permite sumar y mostrar el importe o nivel de ventas realizadas a una
+determinada fecha, mostrando el importe antes y después de impuestos.
+
+2. Permite listar los clientes en función de la marca de sus vehículos o localidad a
+nivel informativo para posibles campañas de promoción.
+
+###  Comunicaciones
+1. Permite enviar notificaciones a clientes concretos, bien sean predeterminadas a
+través del uso de filtros, o una notificación totalmente personalizada.
+2. Permite enviar un email totalmente personalizado en su asunto y cuerpo de
+mensaje a un determinado cliente.
+
 
 
 
