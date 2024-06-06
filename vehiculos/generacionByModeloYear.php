@@ -8,9 +8,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 if($method == "OPTIONS") {
     die();
 }
-
 header('Content-Type: application/json; charset=utf-8');
-
 include_once("../connect.php");
 mysqli_set_charset($mysqli,"utf8");
 /**
@@ -18,7 +16,6 @@ mysqli_set_charset($mysqli,"utf8");
  * Param: id
  * Listado de generaciones por id_modelo
 */
-
 if(isset($_GET['id'])){
 
     $idModelo = (int)$_GET['id'];
